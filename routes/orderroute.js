@@ -3,6 +3,6 @@ const ordercontroller =require('../controllers/ordercontroller')
 const auth = require('../middlewares/auth')
 
 const router =express.Router()
-router.post('/',auth,ordercontroller.createorder)
+router.post('/',ordercontroller.createorder)
 
 module.exports = router;
