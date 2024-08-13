@@ -4,7 +4,7 @@ const Productcontroller = require('../controllers/productcontroller');
 const auth=require("../middlewares/auth")
 const router = express.Router();
 
-router.get('/',auth, Productcontroller.getProducts);
+router.get('/',Productcontroller.getProducts);
 router.post('/',auth,Productcontroller.createProduct);
 // router.delete('/',Productcontroller.deleteProduct);
 
