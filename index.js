@@ -5,8 +5,9 @@ const UserRoutes = require("./routes/userroute");
 const cartRoute = require("./routes/cartroute");
 const orderRoute=require("./routes/orderroute");
 const mongoose = require('mongoose');
-
+const cors = require('cors')
 app.use(express.json());
+app.use(cors());
 
 mongoose.connect(
     "mongodb+srv://nandhini:nandy0302@cluster0.sk9wvzg.mongodb.net/e_commerce"
